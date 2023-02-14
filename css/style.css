@@ -1,0 +1,22 @@
+body{
+    background-color:#326fbf
+}
+    #container{
+        display: grid;
+        height: 95vh;
+        width: 95vw;
+        padding: 1.5px;
+        margin: 1.5vh auto;
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-row-gap: 2.5px;
+        grid-column-gap: 2.5px;
+      }
+      
+      #cellOne{
+        grid-column: 2 / 4;
+        grid-row: 1 / span 1;
+        background-color: #1C4A71;
+      }
+      
