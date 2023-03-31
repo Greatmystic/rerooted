@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HIRB HOME</title>
     <link rel="stylesheet" href="css/style3.css" />
     <script src="js/script.js"></script>
   </head>
@@ -15,7 +15,9 @@
 
     <div class="thin-border"></div>
       <div class="container">
-        <center><h3><font size="+20">HIRB HOME</h3></font></span></center>
+        <center><h3><font size="+20">HIRB HOME</h3></font></span>
+        <br >
+        <img src="images/hirb5.gif" alt="HIRB AI" /></center>
           
 
             <center><h3>
@@ -23,18 +25,34 @@
               <font size="+2.5">Hello! All my data can be accessed<br />
               through this central hub page.</font> <br /><br/> 
               I'm not sure what happened, but<br />
-              it seems like my entire database was breached.<br />
+              it seems like my entire <br />database was breached.<br /><br />
               All CARTECH modules must have been<br />
               shut down simultaneously. Please forgive me<br />
               if some of my information is scattered.</h3>
               
-        <div class="box"></div></center>
+        <div class="box" onclick= "window.location.href='LostBird2.html'"><h1>FIND LOST_DATA_1</h1></div></center>
               
           
       </div>
-      <center><div class="box-small" onclick= "window.location.href='hirbhome.html'"><h4>LOG INTO<br> HIRB DATABASE</h4>
+        <center> <div>
+          <iframe src="LostBird.html" width="80%" height="650"></iframe>
         </div></center>
 
-    </body>
+        <div>
+          <center><div class="box3">
+          <!--PASSWORD - password name located in javascript-->
+          <h1>Password Lock</h1>
+          <label for="password"><h1>Enter Code</h1></label>
+          <input type="password" id="password">
+          <button onclick="checkPassword()">Submit</button>
+          <div id="message"></div>
+          <div id="content">
+            <!-- Add the content that should only be visible after the correct password is entered -->
+            <h2>Welcome!</h2>
+          </div>
+        </div>
+      </center>
+      </div>
+        
   </body>
 </html>

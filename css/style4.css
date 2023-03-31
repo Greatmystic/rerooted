@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.box {
+  width: calc(30% - 50px); /* Width of the border on both sides (20px each) */
+  height: 100px; /* Height of the box */
+  margin: 20px; /* Margin between the box and the border */
+  background-color: #6effc3; /* Set the background color of the box */
+  transition: background-color  0.5s ease;
+  border-radius: 20px; /* Set the radius of the border */
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: blue;
+}
+
+h1 {
+  padding: 20px;
+  font-family: "apple", monospace;
+  font-weight: normal;
+  font-size: 2.5vmin;
+  color: #6effc3;
+  transition: color 0.5s ease;
+  animation-name: colorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: #0fb155;
+}
+
+@keyframes colorChange {
+  0% { color: #5EEEF3; }
+  50% { color: #0fb155; }
+  100% { color: #5EEEF3; }
+}
+
+h1:not(:hover) {
+  animation: none;
+}
