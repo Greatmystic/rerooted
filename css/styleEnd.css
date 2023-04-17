@@ -1,0 +1,110 @@
+#hidden-content {
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+@font-face {
+  font-family:"apple";
+  src: url(../fonts/apple.ttf);
+}
+
+.box {
+  width: calc(30% - 50px); /* Width of the border on both sides (20px each) */
+  height: 100px; /* Height of the box */
+  margin: 20px; /* Margin between the box and the border */
+  background-color: #6effc3; /* Set the background color of the box */
+  transition: background-color  0.5s ease;
+  border-radius: 20px; /* Set the radius of the border */
+}
+
+.box:hover {
+  background-color: darkblue;
+}
+
+.boxEnd {
+  width: calc(30% - 50px); /* Width of the border on both sides (20px each) */
+  height: 100px; /* Height of the box */
+  margin: 20px; /* Margin between the box and the border */
+  background-color: #6effc3; /* Set the background color of the box */
+  transition: background-color  0.5s ease;
+  border-radius: 20px; /* Set the radius of the border */
+}
+
+.boxEnd:hover {
+  background-color: darkblue;
+}
+
+.box2 {
+  width: calc(100% - 0px); /* Width of the border on both sides (20px each) */
+  height: 50px; /* Height of the box */
+  margin: 0px; /* Margin between the box and the border */
+  background-color: #6effc3; /* Set the background color of the box */
+  border-radius: 10px; /* Set the radius of the border */
+}
+
+.box3 {
+  clear: both;
+  width: calc(30% - 50px); /* Width of the border on both sides (20px each) */
+  height: 100px; /* Height of the box */
+  margin-top: 20px; /* Added margin to separate box3 from previous content */
+  margin-bottom: -540px; /* Calculate to make box3 intersects with the bottom of thin-border */
+  background-color: #6effc3; /* Set the background color of the box */
+  transition: background-color  0.5s ease;
+  border-radius: 10px; /* Set the radius of the border */
+}
+
+.box3:hover {
+  background-color: darkblue;
+}
+
+body {
+  margin: 5px;
+  padding: 100px;
+  background-color: black;
+}
+
+.thin-border {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: -6000px; /* Calculate to make thin-border to cover the content until the bottom of the box3 */
+  border: 4px solid #6effc3;
+  z-index: -1;
+  pointer-events: none;
+}
+
+h1 {
+  padding: 20px;
+  font-family: "apple", monospace;
+  font-weight: normal;
+  font-size: 2.5vmin;
+  color: black;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+
+h1:hover {
+  color:white;
+}
+
+h2 {
+  font-family: "apple", monospace;
+  font-weight: normal;
+  font-size: 50px;
+  color:#6effc3; 
+}
+
+h3 {
+  padding: 20px;
+  font-family: "apple", monospace;
+  font-weight: normal;
+  font-size: 20px;
+  color:#6effc3; 
+}
+
+.my-iframe {
+  height: 480px;
+  width: 600px;
+}
